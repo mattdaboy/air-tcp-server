@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/50.2">
+    <id>fr.opendo.anim</id>
+    <versionNumber>12.19.13</versionNumber>
+    <filename>Opendo Anim</filename>
+    <name>Opendo Anim</name>
+    <initialWindow>
+        <content>opendo-anim.swf</content>
+        <aspectRatio>landscape</aspectRatio>
+        <fullScreen>true</fullScreen>
+        <autoOrients>false</autoOrients>
+        <visible>true</visible>
+        <renderMode>gpu</renderMode>
+    </initialWindow>
+    <android>
+        <manifestAdditions><![CDATA[<manifest android:installLocation="auto">
+        <uses-sdk android:minSdkVersion="24" />
+        <uses-sdk android:targetSdkVersion="31" />
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+        <uses-feature android:name="android.hardware.screen.landscape" />
+
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+        <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+        <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+        <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true" />
+
+        <application>
+            <activity>
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
+
+            <!--Main activity for detecting barcodes-->
+            <activity
+                android:name="com.google.zxing.client.android.CaptureActivity"
+                android:clearTaskOnLaunch="true"
+                android:screenOrientation="landscape"
+                android:configChanges="orientation|keyboardHidden"
+                android:stateNotNeeded="true"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:windowSoftInputMode="stateAlwaysHidden" />
+
+            <!--bridge activity between Native Android and Adobe Air-->
+            <activity
+                android:name="com.doitflash.barcode.utils.ExBridge"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+            <!--FileProvider for com.distriqt.Share-->
+            <provider
+                android:name="com.distriqt.extension.share.content.ShareFileProvider"
+                android:authorities="air.fr.opendo.anim.sharefileprovider"
+                android:grantUriPermissions="true"
+                android:exported="false">
+                <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/distriqt_share_paths" />
+            </provider>
+        </application>
+
+        </manifest>]]>
+        </manifestAdditions>
+    </android>
+    <supportedProfiles>desktop extendedDesktop mobileDevice extendedMobileDevice</supportedProfiles>
+    <icon>
+        <image72x72>icons/Android/Android-72.png</image72x72>
+        <image144x144>icons/Android/Android-144.png</image144x144>
+        <image96x96>icons/Android/Android-96.png</image96x96>
+        <image36x36>icons/Android/Android-36.png</image36x36>
+        <image192x192>icons/Android/Android-192.png</image192x192>
+        <image48x48>icons/Android/Android-48.png</image48x48>
+    </icon>
+    <supportedLanguages>en de es fr it pt</supportedLanguages>
+    <extensions>
+        <extensionID>androidx.core</extensionID>
+        <extensionID>com.distriqt.Core</extensionID>
+        <extensionID>com.distriqt.Image</extensionID>
+        <extensionID>com.distriqt.NetworkInfo</extensionID>
+        <extensionID>com.distriqt.Scanner</extensionID>
+        <extensionID>com.distriqt.Share</extensionID>
+    </extensions>
+</application>

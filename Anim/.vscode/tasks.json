@@ -1,0 +1,159 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		// ------------------------------------
+		// macOS + iOS + Android
+		// ------------------------------------
+		{
+			"label": "Build opendo-anim.swf (macOS)",
+			"type": "shell",
+			"command": "bash scripts/build-swf.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package macOS release + Sign operations ---",
+			"type": "shell",
+			"command": "bash scripts/package_macos_release.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package macOS & mobiles releases + Sign operations ---",
+			"type": "shell",
+			"command": "bash scripts/package_macos+mobiles_releases.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package iOS release Ad Hoc ---",
+			"type": "shell",
+			"command": "bash scripts/package_ios-adhoc_release.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package android release ---",
+			"type": "shell",
+			"command": "bash scripts/package_android_release.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+
+		// ------------------------------------
+		// WINDOWS
+		// ------------------------------------
+		{
+			"label": "Build opendo-anim.swf (Windows)",
+			"type": "shell",
+			"command": "scripts/build-swf.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Build opendo-anim-auto-update.swf (Windows)",
+			"type": "shell",
+			"command": "scripts/build-swf-auto.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Copy opendo-anim.swf into build directory",
+			"type": "shell",
+			"command": "cp bin/opendo-anim.swf bin/build/opendo-anim.swf",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Package Windows release (standalone)",
+			"type": "shell",
+			"command": "scripts/app-windows-auto-standalone.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package Windows release + Sign operations ---",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Build opendo-anim.swf (Windows)",
+				"Tools : Copy opendo-anim.swf into build directory",
+				"Build opendo-anim-auto-update.swf (Windows)",
+				"Package Windows release (standalone)",
+				"Tools : Clean all unecessary SWF files (Windows)",
+				"Tools : Clean licenses",
+				"Tools : Delcert standalone exe",
+				"Tools : Signtool standalone exe",
+				"Tools : Clean windows signed exe folder",
+				"Tools : Move signed Opendo Anim Standalone to windows signed exe folder",
+				"Tools : Sfx bundle",
+				"Tools : Signtool sfx",
+				"Tools : Zip sfx"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Clean all unecessary SWF files (Windows)",
+			"type": "shell",
+			"command": "del bin/*.swf",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Clean licenses",
+			"type": "shell",
+			"command": "scripts/clean-licenses.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Delcert standalone exe",
+			"type": "shell",
+			"command": "../Windows_sign_extended/delcert_anim.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Signtool standalone exe",
+			"type": "shell",
+			"command": "scripts/sign-bundle.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Clean windows signed exe folder",
+			"type": "shell",
+			"command": "scripts/clean-windows-signed-exe.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Move signed Opendo Anim Standalone to windows signed exe folder",
+			"type": "shell",
+			"command": "mv -Force 'bin/Opendo Anim Standalone' 'bin/windows signed exe/Opendo Anim Standalone'",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Sfx bundle",
+			"type": "shell",
+			"command": "scripts/sfx-bundle.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Signtool sfx",
+			"type": "shell",
+			"command": "scripts/sign-sfx.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Zip sfx",
+			"type": "shell",
+			"command": "scripts/zip-sfx.cmd",
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}

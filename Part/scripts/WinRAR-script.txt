@@ -1,0 +1,8 @@
+Title=Opendo Participant 12.19.13
+
+Path=%USERPROFILE%\Documents
+
+Overwrite=1
+
+Shortcut=D, "Opendo Part Standalone\Opendo Part.exe", "", "", "Opendo Part Standalone"
+Shortcut=P, "Opendo Part Standalone\Opendo Part.exe", "", "", "Opendo Part Standalone"

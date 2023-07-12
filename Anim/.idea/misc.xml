@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PWA">
+    <option name="wasEnabledAtLeastOnce" value="true" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="AIR50.2.2.2" project-jdk-type="Flex SDK Type (new)">
+    <output url="file://$PROJECT_DIR$/bin" />
+  </component>
+</project>

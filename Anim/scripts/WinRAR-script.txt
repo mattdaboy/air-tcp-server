@@ -1,0 +1,8 @@
+Title=Opendo Animateur 12.19.13
+
+Path=%USERPROFILE%\Documents
+
+Overwrite=1
+
+Shortcut=D, "Opendo Anim Standalone\Opendo Anim.exe", "", "", "Opendo Anim Standalone"
+Shortcut=P, "Opendo Anim Standalone\Opendo Anim.exe", "", "", "Opendo Anim Standalone"

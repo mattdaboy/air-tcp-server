@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/50.2">
+	<id>fr.opendo.part</id>
+	<versionNumber>12.19.13</versionNumber>
+	<filename>Opendo Part</filename>
+	<name>Opendo Part</name>
+	<initialWindow>
+		<content>opendo-part.swf</content>
+		<aspectRatio>landscape</aspectRatio>
+		<fullScreen>true</fullScreen>
+		<autoOrients>false</autoOrients>
+		<visible>true</visible>
+		<renderMode>gpu</renderMode>
+		<requestedDisplayResolution>high</requestedDisplayResolution>
+	</initialWindow>
+	<supportedProfiles>desktop extendedDesktop mobileDevice extendedMobileDevice</supportedProfiles>
+	<icon>
+		<image72x72>icons/Desktop/Desktop-72.png</image72x72>
+		<image128x128>icons/Desktop/Desktop-128.png</image128x128>
+		<image32x32>icons/Desktop/Desktop-32.png</image32x32>
+		<image114x114>icons/Desktop/Desktop-114.png</image114x114>
+		<image36x36>icons/Desktop/Desktop-36.png</image36x36>
+		<image16x16>icons/Desktop/Desktop-16.png</image16x16>
+		<image48x48>icons/Desktop/Desktop-48.png</image48x48>
+	</icon>
+	<supportedLanguages>en de es fr it pt</supportedLanguages>
+</application>

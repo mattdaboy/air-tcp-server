@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="desktop">
+    <configurations>
+      <configuration name="desktop" target-platform="Desktop" pure-as="true" main-class="Main" output-file="opendo-part.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies target-player="50.2">
+          <entries>
+            <entry library-id="4b77dbbc-08b9-4ced-bdfa-217dde81c05b">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="27983bd3-5598-4d40-b885-2d881f440665">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="c7968af4-8e8f-4dad-8650-9f474716f67a">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="322caf8f-832a-4ba1-9438-7253c0b005b9">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="e320bdec-5262-4c0c-b1bd-02bf835c2bc6">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="151b6937-11de-4436-98bf-96196ceab68d">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="d03463fb-e15f-4df8-b04d-8c52c907aeaf">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="dfdb7eee-c9b9-40b4-9cbb-e3715b67943a">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="4216b3b1-a114-4a8c-b730-6de3ddd641d1">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIR50.2.2.2" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+          </map>
+          <option name="resourceFilesMode" value="None" />
+          <option name="additionalOptions" value="-default-size=1920,1200" />
+        </compiler-options>
+        <packaging-air-desktop use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app-mac.xml" package-file-name="Opendo Part">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/database" path-in-package="database" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/htdocs" path-in-package="htdocs" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/icons" path-in-package="icons" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/../cert/Opendo_Self-signed_CodeSigning__exp_2024_07_11.p12" use-temp-certificate="false" />
+        </packaging-air-desktop>
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+      <configuration name="ios" target-platform="Mobile" pure-as="true" main-class="Main" output-file="opendo-part-ios.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies>
+          <entries>
+            <entry library-id="c851a06b-4922-499b-b383-f99fa1d2b686">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="a6f227d1-a279-4856-836e-d0761a640755">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="8481f55b-bf84-4c96-ad79-73b408b50113">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="d1283775-a46b-4967-9503-57112ad5b647">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="a4f8dcde-2a8e-4af9-842c-8cf1a2989b17">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="a698d1f8-8992-48a5-becb-85c3b37065ce">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="ec14b939-abe0-491e-a07f-299fc36f306c">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="43198367-e851-4501-acb0-47725c3a14c1">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="4438c3eb-8b81-4ca5-b626-5254da8f0dcd">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIR50.2.2.2" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+          </map>
+          <option name="resourceFilesMode" value="None" />
+          <option name="additionalOptions" value="-default-size=1920,1200" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android package-file-name="ios" />
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app-ios.xml" package-file-name="opendo-part">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/database" path-in-package="database" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/htdocs" path-in-package="htdocs" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/icons" path-in-package="icons" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/Assets.car" path-in-package="Assets.car" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-568h@2x~iphone.png" path-in-package="Default-568h@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-568h@2x~iphone.png" path-in-package="Default-Landscape-568h@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-568h~iphone.png" path-in-package="Default-Landscape-568h~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-667h@2x~iphone.png" path-in-package="Default-Landscape-667h@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-736h@3x~iphone.png" path-in-package="Default-Landscape-736h@3x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-812h@3x~iphone.png" path-in-package="Default-Landscape-812h@3x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-896h@3x~iphone.png" path-in-package="Default-Landscape-896h@3x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-960h@2x~iphone.png" path-in-package="Default-Landscape-960h@2x~iphone.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-1194h@2x~ipad.png" path-in-package="Default-Landscape-1194h@2x~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape-1336h@2x~ipad.png" path-in-package="Default-Landscape-1336h@2x~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape@2x~ipad.png" path-in-package="Default-Landscape@2x~ipad.png" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/splashscreens/Default-Landscape~ipad.png" path-in-package="Default-Landscape~ipad.png" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/../cert/Opendo_ios_distribution__exp_2024_04_05.p12" provisioning-profile-path="$MODULE_DIR$/../cert/Opendo_wildcard_distribution__exp_2024_04_05.mobileprovision" />
+        </packaging-ios>
+      </configuration>
+      <configuration name="android armv7" target-platform="Mobile" pure-as="true" main-class="Main" output-file="opendo-part-android-armv7.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies>
+          <entries>
+            <entry library-id="c732f5d1-f48c-4a2b-9e44-2c8e51573421">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="8c0c8b0a-6ca5-4136-adfd-3ac0fc806892">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="00731ad6-3d54-4868-92f7-6b73fe20a1ab">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="30d81d0d-9c51-46a3-87ea-1cfc6a1b5164">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="36c2a445-7975-4e63-85d0-e2ab465c35e9">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="df02c541-9e8b-4867-ab37-9723b2f47ceb">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="9218e123-0d2a-41a3-9fc4-952f5ce8ac19">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="6e8df524-d441-4d29-bc9d-60ef400e2f91">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="c671751e-6849-4fb7-a2dd-e106f5825ca7">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="3326c488-1b2f-406a-b4f4-db452b25cbe8">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIR50.2.2.2" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+          </map>
+          <option name="resourceFilesMode" value="None" />
+          <option name="additionalOptions" value="-default-size=1920,1200" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app-android.xml" package-file-name="opendo-part-armv7">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/database" path-in-package="database" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/htdocs" path-in-package="htdocs" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/icons" path-in-package="icons" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/../cert/Opendo_AndroidAutoSigning__exp_2291.p12" use-temp-certificate="false" />
+        </packaging-android>
+        <packaging-ios use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app-android-armv7.xml" package-file-name="opendo-part-armv7">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/database" path-in-package="database" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/htdocs" path-in-package="htdocs" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/icons" path-in-package="icons" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/cert/Opendo_ios_distribution__exp_2024_04_05.p12" provisioning-profile-path="$MODULE_DIR$/cert/Opendo_App_Store_distribution__exp_2024_04_05.mobileprovision" />
+        </packaging-ios>
+      </configuration>
+      <configuration name="android armv8" target-platform="Mobile" pure-as="true" main-class="Main" output-file="opendo-part-android-armv8.swf" output-folder="$MODULE_DIR$/bin">
+        <dependencies>
+          <entries>
+            <entry library-id="0c157f61-e760-4209-9c83-016e4d096619">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="b710ded5-275d-40ec-b01f-d2edd098d95d">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="71193fb4-72bc-47c7-841e-1d443a09cb64">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="08a34635-0485-4623-867f-cf3cc2db1170">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="fbd72eb3-89aa-49ec-89b5-9a35a9570aba">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="177ab80b-9e62-456a-9e31-59f7fdcc2cca">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="16c96f0c-b634-4969-9ed4-6ca1e33fae20">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="32dceea9-23f5-49ff-9cd0-b3491d254885">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="90dc09ec-fb70-486d-9485-6ebe7016f512">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="dad06aa8-10af-4b56-a196-36bd0039daca">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="AIR50.2.2.2" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+          </map>
+          <option name="resourceFilesMode" value="None" />
+          <option name="additionalOptions" value="-default-size=1920,1200" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app-android.xml" package-file-name="opendo-part-armv8">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/database" path-in-package="database" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/htdocs" path-in-package="htdocs" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/icons" path-in-package="icons" />
+          </files-to-package>
+          <AirSigningOptions arch="armv8" keystore-path="$MODULE_DIR$/../cert/Opendo_AndroidAutoSigning__exp_2291.p12" use-temp-certificate="false" />
+        </packaging-android>
+        <packaging-ios use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/app-android-armv8.xml" package-file-name="opendo-part-armv8">
+          <files-to-package>
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/assets" path-in-package="assets" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/database" path-in-package="database" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/htdocs" path-in-package="htdocs" />
+            <FilePathAndPathInPackage file-path="$MODULE_DIR$/bin/icons" path-in-package="icons" />
+          </files-to-package>
+          <AirSigningOptions keystore-path="$MODULE_DIR$/cert/Opendo_ios_distribution__exp_2024_04_05.p12" provisioning-profile-path="$MODULE_DIR$/cert/Opendo_App_Store_distribution__exp_2024_04_05.mobileprovision" />
+        </packaging-ios>
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="AIR50.2.2.2" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="4b77dbbc-08b9-4ced-bdfa-217dde81c05b" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/as3corelib.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="27983bd3-5598-4d40-b885-2d881f440665" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/blooddy_crypto.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="c7968af4-8e8f-4dad-8650-9f474716f67a" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Core.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="322caf8f-832a-4ba1-9438-7253c0b005b9" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Scanner.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="e320bdec-5262-4c0c-b1bd-02bf835c2bc6" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Share.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="151b6937-11de-4436-98bf-96196ceab68d" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/greensock.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="d03463fb-e15f-4df8-b04d-8c52c907aeaf" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/part.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="c851a06b-4922-499b-b383-f99fa1d2b686" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/as3corelib.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="a6f227d1-a279-4856-836e-d0761a640755" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/blooddy_crypto.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="8481f55b-bf84-4c96-ad79-73b408b50113" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Core.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="d1283775-a46b-4967-9503-57112ad5b647" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Scanner.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="a4f8dcde-2a8e-4af9-842c-8cf1a2989b17" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Share.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="a698d1f8-8992-48a5-becb-85c3b37065ce" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/greensock.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="ec14b939-abe0-491e-a07f-299fc36f306c" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/part.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="c732f5d1-f48c-4a2b-9e44-2c8e51573421" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/as3corelib.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="8c0c8b0a-6ca5-4136-adfd-3ac0fc806892" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/blooddy_crypto.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="00731ad6-3d54-4868-92f7-6b73fe20a1ab" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Core.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="30d81d0d-9c51-46a3-87ea-1cfc6a1b5164" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Scanner.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="36c2a445-7975-4e63-85d0-e2ab465c35e9" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Share.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="df02c541-9e8b-4867-ab37-9723b2f47ceb" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/greensock.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="9218e123-0d2a-41a3-9fc4-952f5ce8ac19" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/part.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="0c157f61-e760-4209-9c83-016e4d096619" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/as3corelib.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="b710ded5-275d-40ec-b01f-d2edd098d95d" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/blooddy_crypto.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="71193fb4-72bc-47c7-841e-1d443a09cb64" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Core.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="08a34635-0485-4623-867f-cf3cc2db1170" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Scanner.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="fbd72eb3-89aa-49ec-89b5-9a35a9570aba" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Share.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="177ab80b-9e62-456a-9e31-59f7fdcc2cca" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/greensock.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="16c96f0c-b634-4969-9ed4-6ca1e33fae20" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/part.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="43198367-e851-4501-acb0-47725c3a14c1" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Volume.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="dfdb7eee-c9b9-40b4-9cbb-e3715b67943a" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Volume.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="6e8df524-d441-4d29-bc9d-60ef400e2f91" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Volume.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="32dceea9-23f5-49ff-9cd0-b3491d254885" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Volume.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="c671751e-6849-4fb7-a2dd-e106f5825ca7" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/androidx.core.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="90dc09ec-fb70-486d-9485-6ebe7016f512" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/androidx.core.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="3326c488-1b2f-406a-b4f4-db452b25cbe8" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Image.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="dad06aa8-10af-4b56-a196-36bd0039daca" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Image.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="4438c3eb-8b81-4ca5-b626-5254da8f0dcd" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Image.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="4216b3b1-a114-4a8c-b730-6de3ddd641d1" />
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.distriqt.Image.ane!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

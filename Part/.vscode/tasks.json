@@ -1,0 +1,136 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		// ------------------------------------
+		// macOS + iOS + Android
+		// ------------------------------------
+		{
+			"label": "Build opendo-part.swf (macOS)",
+			"type": "shell",
+			"command": "bash scripts/build-swf.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package macOS release + Sign operations ---",
+			"type": "shell",
+			"command": "bash scripts/package_macos_release.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package macOS and mobiles releases + Sign operations ---",
+			"type": "shell",
+			"command": "bash scripts/package_macos+mobiles_releases.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package iOS release Ad Hoc ---",
+			"type": "shell",
+			"command": "bash scripts/package_ios-adhoc_release.sh",
+			"group": "build",
+			"problemMatcher": []
+		},
+
+		// ------------------------------------
+		// WINDOWS
+		// ------------------------------------
+		{
+			"label": "Build opendo-part.swf (Windows)",
+			"type": "shell",
+			"command": "scripts/build-swf.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Package Windows release (standalone)",
+			"type": "shell",
+			"command": "scripts/app-windows-standalone.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "--- Package Windows release + Sign operations ---",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Build opendo-part.swf (Windows)",
+				"Package Windows release (standalone)",
+				"Tools : Clean all unecessary SWF files (Windows)",
+				"Tools : Clean licenses",
+				"Tools : Delcert standalone exe",
+				"Tools : Signtool standalone exe",
+				"Tools : Clean windows signed exe folder",
+				"Tools : Move signed Opendo Part Standalone to windows signed exe folder",
+				"Tools : Sfx bundle",
+				"Tools : Sign sfx",
+				"Tools : Zip sfx"
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Clean all unecessary SWF files (Windows)",
+			"type": "shell",
+			"command": "del bin/opendo-part.swf",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Clean licenses",
+			"type": "shell",
+			"command": "scripts/clean-licenses.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Delcert standalone exe",
+			"type": "shell",
+			"command": "../Windows_sign_extended/delcert_part.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Signtool standalone exe",
+			"type": "shell",
+			"command": "scripts/sign-bundle.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Clean windows signed exe folder",
+			"type": "shell",
+			"command": "scripts/clean-windows-signed-exe.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Move signed Opendo Part Standalone to windows signed exe folder",
+			"type": "shell",
+			"command": "mv -Force 'bin/Opendo Part Standalone' 'bin/windows signed exe/Opendo Part Standalone'",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Sfx bundle",
+			"type": "shell",
+			"command": "scripts/sfx-bundle.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Sign sfx",
+			"type": "shell",
+			"command": "scripts/sign-sfx.cmd",
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"label": "Tools : Zip sfx",
+			"type": "shell",
+			"command": "scripts/zip-sfx.cmd",
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}
