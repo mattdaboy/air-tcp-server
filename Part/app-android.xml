@@ -5,7 +5,7 @@
     <filename>Opendo Part</filename>
     <name>Opendo Part</name>
     <initialWindow>
-        <content>opendo-part.swf</content>
+        <content>opendo-part2.swf</content>
         <aspectRatio>landscape</aspectRatio>
         <fullScreen>true</fullScreen>
         <autoOrients>false</autoOrients>
