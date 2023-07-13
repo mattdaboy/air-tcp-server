@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <application xmlns="http://ns.adobe.com/air/application/50.2">
 	<id>fr.opendo.anim</id>
-	<versionNumber>12.19.13</versionNumber>
+	<versionNumber>12.19.14</versionNumber>
 	<filename>Opendo Anim</filename>
 	<name>Opendo Anim</name>
 	<initialWindow>
